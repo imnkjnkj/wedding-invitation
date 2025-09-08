@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thiệp cưới Văn Hiệp & Ánh Nhi</title>
 
-  <meta property="og:title" content="Thiệp cưới Văn Hiệp & Ánh Nhi - Chủ nhật, 08 Tháng 11 2025">
-  <meta property="og:description" content="Thiệp cưới Văn Hiệp & Ánh Nhi - Chủ nhật, 08 Tháng 11 2025">
+  <meta property="og:title" content="Thiệp cưới Văn Hiệp & Ánh Nhi - Thứ Bảy, 08 Tháng 11 2025">
+  <meta property="og:description" content="Thiệp cưới Văn Hiệp & Ánh Nhi - Thứ Bảy, 08 Tháng 11 2025">
   <meta property="og:locale" content="vi_VN" />
   <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
   <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
@@ -22,7 +22,7 @@
   <script src="https://kit.fontawesome.com/2828f7885a.js"
     integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.coundown.js"></script>
   <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,27 +128,23 @@
           <div class="spasi">
           </div>
           <script type="text/javascript">
-            var now = new Date();
-            var day = now.getDate();
-            var month = now.getMonth() + 1;
-            var year = now.getFullYear() + 1;
+            $(document).ready(function() {
+              var harih = new Date('2025-11-08T11:00:00+07:00').toISOString();
 
-            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-            var harih = '09/11/2025 17:00:00';
-
-            $('#hitungmundur').countdown({
-              date: harih, // TODO Date format: 07/27/2017 17:00:00
-              offset: +7, // TODO Your Timezone Offset
-              day: 'Ngày',
-              days: 'Ngày',
-              hour: 'Giờ',
-              hours: 'Giờ',
-              minute: 'Phút',
-              minutes: 'Phút',
-              second: 'Giây',
-              seconds: 'Giây'
-            }, function () {
-              alert('Done!');
+              $('#hitungmundur').countdown({
+                date: harih,
+                offset: +7, // Vietnam timezone UTC+7,
+                day: 'Ngày',
+                days: 'Ngày',
+                hour: 'Giờ',
+                hours: 'Giờ',
+                minute: 'Phút',
+                minutes: 'Phút',
+                second: 'Giây',
+                seconds: 'Giây'
+              }, function () {
+                console.log('Done!');
+              });
             });
           </script>
         </div>
@@ -553,7 +549,6 @@
   <!-- End Footer -->
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menikah.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
